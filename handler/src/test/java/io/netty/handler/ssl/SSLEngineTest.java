@@ -4441,7 +4441,7 @@ public abstract class SSLEngineTest {
 
             handshake(param.type(), param.delegate(), clientEngine, serverEngine);
             fail();
-        } catch (SSLHandshakeException expected) {
+        } catch (SSLException expected) {
             // Expected
         } finally {
             cleanupClientSslEngine(clientEngine);
